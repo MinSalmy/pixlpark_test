@@ -731,9 +731,10 @@ function loadScript(src, func) {
  * @param  {} location
  */
 function showDetails(location) {
-  
+    const mapContainer = document.getElementById('mapContainer');
+    mapContainer.innerHTML = '';
     loadScript('map.js').then(() => createMap('mapContainer', location.coordinates, 'map_gray_style.json'));
-    /*const mapContainer = document.getElementById('mapContainer');
+    /*
     getMapImage(2000,530, location.address).then((myBlob) => {
         mapContainer.src = URL.createObjectURL(myBlob);
       });*/
