@@ -30,39 +30,7 @@ const getMapImage = async (width, height, street) => {
     const e = new Error('Something went wrong');
     e.data = error;
     throw e;
-/*
-    const myHeaders = new Headers();
-
-    const myRequest = new Request('https://image.maps.ls.hereapi.com/mia/1.6/mapview', {
-        
-        method: 'GET',
-        headers: myHeaders,
-        mode: 'cors',
-        cache: 'default',
-        data: {
-            w: width,
-            h: height,
-            f: '1',
-            z: '18',
-            i: '0',
-            s: street,
-            n: '10',
-            t: 5,
-            apiKey: KEY_API,
-        }
-    });
-    const response = 
-    fetch(myRequest)
-    if (response.ok) {
-        return response.json();
-    }
-    /*.then((response) => response.blob())
-    .then((myBlob) => {
-        myImage.src = URL.createObjectURL(myBlob);
-    });*/
-    return myImage;
 }
-//getMapImage(1000, 500, '109 Columbus Circle, New York, NY 10023').then(data => console.log(data))
 
 //Элементы навигационного меню с выпадающим списком
 const navbarList = [
@@ -448,13 +416,13 @@ const footerLists = {
             {
                 id: idGenerator(),
                 classes: ['footer-element'],
-                text: 'show cart', 
+                text: 'View cart', 
                 href: '#',
             },
             {
                 id: idGenerator(),
                 classes: ['footer-element'],
-                text: 'show your lookbook',
+                text: 'View your lookbook',
                 href: '#',
             },   
             {
