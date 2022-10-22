@@ -1,0 +1,13 @@
+{
+  "devDependencies": {
+    "autoprefixer": "^10.4.12",
+    "cssnano": "^5.1.13",
+    "postcss": "^8.4.18",
+    "postcss-bem": "^0.4.1",
+    "postcss-cli": "^10.0.0",
+    "postcss-nested": "^6.0.0"
+  },
+  "scripts": {
+    "postcss:watch": "postcss style.postcss --output style.css --watch"
+  }
+}

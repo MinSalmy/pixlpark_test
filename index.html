@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avenue Fashion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+    <script src="map_image.js" defer></script>
+    <script src="https://kit.fontawesome.com/d56a54d0d4.js" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-core.js" defer></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-harp.js" defer></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-service.js" defer></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-ui.js" defer></script>
+    <script type="text/javascript" src="https://js.api.here.com/v3/3.1/mapsjs-mapevents.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="bar">
+            <div class="container container_split">
+                <div class="left-block">
+                    <label class="left-block__currency" for="currency">Currency : </label>
+                    <select name="currency" id="currency" class="left-block__currency">
+                        <option value="GBP">GBP</option>    
+                        <option value="RUB">RUB</option>    
+                        <option value="USD">USD</option>    
+                        <option value="KRW">KRW</option>    
+                        <option value="JPY">JPY</option>    
+                    </select>
+                </div>
+                
+                <div class="bar__right-block">
+                    <div class="wrapper wrapper_top-small">
+                        <a href="#">Register</a>
+                        <a href="#">Sign In</a>
+                    </div>
+                    <div class="cart-wrapper" >
+                        <label for="cart"><i class="cart-wrapper__label fa-solid fa-cart-shopping"></i>
+                        </label>
+                        <select name="cart" id="cart" class="cart-wrapper__cart">
+                            <option value="empty">empty</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-wrapper">
+        <div class="header">
+            <div class="header__logo-wrapper">
+                <a href="#" class="logo"><span class="logo__bold">avenue</span> fashion</a>
+                
+            </div>
+
+            <nav class="header__navbar container container_right-side">
+                <ul class="menu">
+                    <!-- Loading from script.js -->
+                </ul>
+            </nav>
+
+            <div class="header__search-wrapper">
+                <input class="header__search" type="search" name="search" id="search" placeholder="Search...">
+                <i class="header__search-icon fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </div>
+        <div class="intro">
+            <h1 class="intro__main-header"><span class="intro__main-header_bold">Local</span> stores</h1>
+            <h2 class="intro__sub-header">Find a store near you</h2>
+        </div>
+    </header>
+
+    <main>
+        <section class="locations container container_small-width">
+            <!-- Loading from script.js -->
+        </section>
+
+        <section class="location-details">
+            <div id="mapContainer" class="location-details__mapContainer">
+            </div>
+            <!-- Loading from script.js onClick -->  
+
+           <div class="location-details__details details">
+               <!-- Loading from script.js onClick -->
+           </div> 
+        </section>
+    </main>
+
+    <footer>
+        <section class="about">
+            <!-- Loading from script.js -->
+        </section>
+
+        <section class="banners">
+            <div class="container container_small-width">
+            <div class="banner banner_award">
+                <b>award winner</b> <p>fashion awards 2016</p>
+            </div>
+
+            <div class="banner banner_socials">
+                <ul class="banner__list">
+                    <a href="https://facebook.com"><i class="social-icon fa-brands fa-facebook-f"></i></a>
+                    <a href="https://twitter.com"><i class="social-icon fa-brands fa-twitter"></i></a>
+                    <a href="https://instagram.com"><i class="social-icon fa-brands fa-instagram"></i></a>
+                    <a href="https://pinterest.com"><i class="social-icon fa-brands fa-pinterest"></i></a>
+                </ul>
+            </div>
+        </div>
+        </section>
+
+        <section class="bar">
+            <div class="container container_split">
+                <div class="left-block">
+                    <span>© 2016 Avenue Fashion™</span>
+                </div>
+                <div class="wrapper wrapper_bottom-small">
+                    <span>Design by RobbyDesigns.com</span>
+                    <span>Dev by Loremipsum.com</span>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>
